@@ -45,7 +45,7 @@ export const credentialsLogin = async (formData:{email:string , password:string}
 export const googleLogin = async () => {
   try {
     //do checks for account
-    await signIn("google", { redirectTo: "/account/dashboard" });
+    await signIn("google", { callbackUrl: "/account/dashboard" });
   } catch (error) {
     if (error instanceof AuthError) {
       console.log(error)

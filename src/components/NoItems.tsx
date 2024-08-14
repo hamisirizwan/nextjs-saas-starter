@@ -4,6 +4,7 @@ import { auth } from '@/auth';
 
 async function NoItems() {
   const session = await auth();
+
   return (
     <div
         className="flex flex-1 items-center justify-center rounded-lg border border-dashed shadow-sm"

@@ -11,10 +11,16 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";
+import ErrorAlert from "./ErrrorAlert";
 
 export function LoginForm() {
+  const searchParams = useSearchParams()
+  const urlError = searchParams.get("error")
+  let authError = urlError === "OAuthAccountNotLinked" ? "Email already registered with different provider" : urlError
+
   const [email, setEmail] = useState<string | null>("");
   const [password, setPassword] = useState<string | null>("");
   const [loading, setLoading] = useState<boolean>(false);
@@ -77,6 +83,7 @@ export function LoginForm() {
               <Input id="last-name" placeholder="Robinson" required />
             </div>
           </div> */}
+          {authError && <ErrorAlert errorMessage={authError} />}
           <div className="grid gap-2">
             <Label htmlFor="email">Email</Label>
             <Input

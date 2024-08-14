@@ -1,12 +1,16 @@
 // export { auth as middleware } from "@/auth";
 
-import { auth } from "@/auth";
+
+import NextAuth from "next-auth";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import authConfig from "./auth.config";
 
 
 const protectedRoutes = ["/account"];
 const authRoutes = ["/login", "/register"]
+
+ const { auth } = NextAuth(authConfig)
 
 export default async function middleware(request: NextRequest) {
   const session = await auth();
