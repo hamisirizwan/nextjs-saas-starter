@@ -13,16 +13,24 @@ export const credentialsLogin = async (formData:{email:string , password:string}
         where: {
           email:formData.email,
         },
+        include:{
+          accounts:true
+        }
       });
 
       if(!user){
         return { error: `User with email ${formData.email} not found` };
       }
 
+      if(!user.hashedPassword){
+        return { error: `User registered via ${user?.accounts[0].provider} signUp. Please login with the same method` };  
+      }
+
       const isMatch = bcrypt.compareSync(
         formData.password as string,
         user.hashedPassword
       );
+
       if (!isMatch) {
         return { error: `Incorrect password` };
       }
