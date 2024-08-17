@@ -26,7 +26,7 @@ export default function LandingPageNav() {
     setScrollYProgressHeight(Math.ceil(latest));
   });
 
-  const { data: session, status } = useSession();
+  const { data: session } = useSession();
 
   return (
     <motion.nav
