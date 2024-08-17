@@ -5,7 +5,7 @@ function Footer() {
     <footer className="flex justify-center px-4 text-gray-800 bg-white dark:text-white dark:bg-gray-900">
       <div className="container px-6 py-6">
         <h1 className="text-lg font-bold text-center lg:text-2xl">
-          Join 1000+ developers and never miss <br /> out on new tips,
+          Subscribe to my newsletter to get updates, new tips,
           tutorials, and more.
         </h1>
         <div className="flex flex-col justify-center mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
