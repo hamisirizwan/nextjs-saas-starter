@@ -2,9 +2,8 @@ import { auth } from "@/auth";
 import Link from "next/link";
 
 import Image from "next/image";
-import Logout from "./shell/Logout";
-import { Button } from "./ui/button";
-
+import { Button } from "../ui/button";
+import Logout from "../shell/Logout";
 
 const HomeNavBar = async () => {
   const session = await auth();
