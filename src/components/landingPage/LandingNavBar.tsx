@@ -47,9 +47,9 @@ export default function LandingPageNav() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden lg:flex items-center">
             <Link
               className="inline-block  hover:text-teal-400 mr-10"
-              href="/#features"
+              href="/ai-chat"
             >
-              Features
+              AI chat page
             </Link>
             <Link
               className="inline-block  hover:text-teal-400 mr-10"
