@@ -53,9 +53,15 @@ export default function LandingPageNav() {
             </Link>
             <Link
               className="inline-block  hover:text-teal-400 mr-10"
-              href="/#pricing"
+              href="/landing-page"
             >
-              Pricing
+              Landing Page Components
+            </Link>
+            <Link
+              className="inline-block  hover:text-teal-400 mr-10"
+              href="/blog"
+            >
+              Blog Layout
             </Link>
           </div>
           <div className="lg:hidden ml-auto flex gap-3">

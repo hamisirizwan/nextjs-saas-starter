@@ -79,6 +79,7 @@ const CreditCard = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>(
     </svg>
   ),
 );
+
 CreditCard.displayName = "CreditCard";
 
 export { AnimatedSpinner, CreditCard };
