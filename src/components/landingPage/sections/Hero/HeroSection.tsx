@@ -17,7 +17,7 @@ function HeroSection() {
     </div>
     {/* End Announcement Banner */}
     {/* Title */}
-    <div className="mt-5 max-w-xl text-center mx-auto">
+    <div className="mt-5 max-w-2xl text-center mx-auto">
       <h1 className="block font-bold text-gray-800 text-3xl md:text-4xl lg:text-5xl dark:text-neutral-200">
         Supercharge Your NextJS Saas Development
       </h1>
