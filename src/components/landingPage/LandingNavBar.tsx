@@ -59,7 +59,7 @@ export default function LandingPageNav() {
             </Link>
             <Link
               className="inline-block  hover:text-teal-400 mr-10"
-              href="/blog"
+              href="/blogs"
             >
               Blog Layout
             </Link>

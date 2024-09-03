@@ -42,7 +42,7 @@ export default function MobileMenu() {
               <li className="mb-6">
                 <Link
                   className="inline-block text-black dark:text-white dark:hover:text-emerald-500"
-                  href="/blog"
+                  href="/blogs"
                 >
                   Blog  Layout
                 </Link>
